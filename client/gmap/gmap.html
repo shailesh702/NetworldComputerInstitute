@@ -1,0 +1,24 @@
+<template name="gmap">
+	
+		<div class="map-container" id="map-container">
+			{{> googleMap name="exampleMap" options="exampleMapOptions"}}
+			
+		</div>
+		
+		<br><br>
+
+	<form class="form">
+		<div class="container-fluid pull-right" style="width:100%;">
+			<!--input type="text" id="txtlocation" class="pull-right" value="Location" style="width:70%;" readonly-->
+			<h4 class="pull-right"><b>Location : </b> <input type="button" id="txtlocation" class="pull-right" value="Location not found..." readonly disabled> </h4>
+
+	    	<input type="text" id="textbox1" value="Location" size="80">	
+
+	  	</div>
+	</form>
+
+	
+</template>
+<!-- <template name="googleMap">
+	<div class="map-canvas" ></div>
+</template>  -->

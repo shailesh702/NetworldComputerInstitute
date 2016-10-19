@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav navbar-right">
       	<li><a href="#myPage">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">COURSES</a></li>
+        <li><a href="#courses">COURSES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#pricing">CAREERS/RECRUITERS</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -71,8 +71,8 @@
   </div>
 </div>
 
-<!-- Container (Services Section) -->
-<div id="Courses" class="container-fluid text-center">
+<!-- Container (Courses Section) -->
+<div id="courses" class="container-fluid text-center">
   <h2>COURSES</h2>
   <h4>What we offer</h4>
   <br>
@@ -243,37 +243,13 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{{>contact_us}}
+<!-- End of Container (Contact Session) -->
 
 <div id="googleMap" style="height:400px;width:100%;border:1px solid black;">
 	
-	Code for google map
+	<!-- Code for google map -->
+  {{> gmap}}
 </div>
 
 <footer class="container-fluid text-center">

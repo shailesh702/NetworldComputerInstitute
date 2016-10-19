@@ -26,3 +26,6 @@ mrt:toastjs
 email
 meteorhacks:ssr
 session
+dburles:google-maps
+jeffrey:easy-map
+jaymc:google-reverse-geocode
