@@ -1,4 +1,4 @@
-  
+
 Meteor.startup(function(){
 	GoogleMaps.load();
 });
@@ -19,10 +19,10 @@ Template.gmap.helpers({
     // }
     // var a = _lat.get();
     // var b = _lon.get();
-    var a = -34.397;
-    var b = 150.644;
-    alert("hello");
-    document.getElementById("textbox1").value = "locations : "+ a + " : " + b ;  
+        // var a = -34.397;
+        // var b = 150.644;
+        // alert("hello");
+        // document.getElementById("textbox1").value = "locations : "+ a + " : " + b ;  
 
     // reverseGeocode.getLocation(a, b, function(location){   
     
@@ -36,8 +36,9 @@ Template.gmap.helpers({
     if (GoogleMaps.loaded()) {
     // Map initialization options
       return {
-        center: new google.maps.LatLng( a , b ),
-        zoom: 18 
+        center: new google.maps.LatLng( -37.8136 , 144.9631 ),
+        zoom: 8,
+        // mapTypeId: google.maps.MapTypeId.ROADMAP
       };
     }
     },
@@ -120,10 +121,11 @@ Template.gmap.onCreated(function() {
   // We can use the `ready` callback to interact with the map API once the map is ready.
   GoogleMaps.ready('exampleMap', function(map) {
     // Add a marker to the map once it's ready
-    var marker = new google.maps.Marker({
-      position: map.options.center,
-      map: map.instance
-    });
+    console.log("I'm ready!");
+    // var marker = new google.maps.Marker({
+    //   position: map.options.center,
+    //   map: map.instance
+    // });
   });
 });
 

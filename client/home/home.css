@@ -71,7 +71,7 @@
       transition: box-shadow 0.5s;
   }
   .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      box-shadow: 5px 0px 40px #f4511e;/*rgba(0,0,0, .2);*/
   }
   .panel-footer .btn:hover {
       border: 1px solid #f4511e;
@@ -80,7 +80,7 @@
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #f4511e !important;
+      background-color: #fff !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;

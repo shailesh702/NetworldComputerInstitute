@@ -10,3 +10,7 @@
 	border: 1px solid black;
 	margin-left: 20px;
 }*/
+
+#courses_checkbox > span{
+	padding-right: 10px;
+}
